@@ -1,0 +1,7 @@
+// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
+/*
+ * Copyright (c) Karl Chan <exxxxkc@getgoogleoff.me> 
+ *
+ */
+
+#include "meson-gxl-u-boot.dtsi"
