@@ -129,6 +129,10 @@ config TARGET_DB_88F6720
 	bool "Support DB-88F6720 Armada 375"
 	select ARMADA_375
 
+config TARGET_WD_GLACIER
+	bool "Support WD MyCloud Gen2"
+	select ARMADA_375
+
 config TARGET_DB_88F6820_GP
 	bool "Support DB-88F6820-GP"
 	select 88F6820
@@ -313,6 +317,7 @@ config SYS_BOARD
 	default "db-xc3-24g4xg" if TARGET_DB_XC3_24G4XG
 	default "crs3xx-98dx3236" if TARGET_CRS3XX_98DX3236
 	default "mvebu_alleycat-5" if TARGET_MVEBU_ALLEYCAT5
+	default "glacier" if TARGET_WD_GLACIER
 
 config SYS_CONFIG_NAME
 	default "clearfog" if TARGET_CLEARFOG
@@ -338,6 +343,7 @@ config SYS_CONFIG_NAME
 	default "db-xc3-24g4xg" if TARGET_DB_XC3_24G4XG
 	default "crs3xx-98dx3236" if TARGET_CRS3XX_98DX3236
 	default "mvebu_alleycat-5" if TARGET_MVEBU_ALLEYCAT5
+	default "wd-glacier" if TARGET_WD_GLACIER
 
 config SYS_VENDOR
 	default "Marvell" if TARGET_DB_MV784MP_GP
@@ -362,6 +368,7 @@ config SYS_VENDOR
 	default "alliedtelesis" if TARGET_X240
 	default "mikrotik" if TARGET_CRS3XX_98DX3236
 	default "Marvell" if TARGET_MVEBU_ALLEYCAT5
+	default "wd" if TARGET_WD_GLACIER
 
 config SYS_SOC
 	default "mvebu"
